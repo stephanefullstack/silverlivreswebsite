@@ -1251,3 +1251,67 @@ function setSmartSiteCookies() {
 }
 $.DM.events.on("afterAjax", setSmartSiteCookies);
 setSmartSiteCookies();
+</script>
+<script type="text/javascript">
+
+    Parameters.NavigationAreaParams.MoreButtonText = '......';
+
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+
+<script>
+
+    jQuery(window).load(function () {
+        try {
+            jQuery.DM.updateIOSHeight();
+        } catch (e) {
+        }
+        ;
+    });
+</script>
+<script>
+    dmAPI.loadScript(window.rtCommonProps['common.resources.cdn.host'] + '/libs/lozad/1.15.0/lozad.min.js', function () {
+        dmAPI.runOnReady('lozadInit', function () {
+            window.document.querySelectorAll('img.lazy').forEach(function (img) {
+                img.addEventListener('load', function (event) {
+                    var img = event.target;
+                    img.style.filter = 'blur(0)';
+                    setTimeout(function () {
+                        $(img).closest('.imageWidget').addClass('lazyLoaded');
+                    }, 250)
+                });
+            });
+            lozad('.lazy', {
+                threshold: 0.1,
+                loaded: function (element) {
+                    if (element.getAttribute('data-background-image')) {
+                        element.style.setProperty(
+                            'background-image',
+                            "url('" + element.getAttribute('data-background-image') + "')",
+                            "important"
+                        );
+                    }
+                }
+            }).observe();
+        });
+    });
+</script>
+<!--  End Script tags -->
+
+<!--  Begin Product Custom HTML Markup -->
+<script>
+function call1and1Tracking() {
+	var externalId = dmAPI.getSiteExternalId();
+	var siteName = dmAPI.getSiteName();
+	var src = 'https://integration.mywebsite-editor.com/dakota-snippet-service/snippet/integration/snippet.js?sitename='+siteName+'&external_uid='+externalId+'&mode=visit'
+	var tracking = document.createElement('script');
+     tracking.setAttribute('src',src);
+   	document.head.appendChild(tracking);
+}
+call1and1Tracking();
+</script><!--  End Product Custom HTML Markup -->
+
+
+<div style="position: relative; z-index: 2147483645;" class="ms-style"> <div id="ms-loader" class="ms-loader" style="display:none"> <div class="ms-ellipsis"> <div></div> <div></div> <div></div> <div></div> </div> <div class="w-embed"> <style>.ms-loader{position:fixed;left:0;top:0;right:0;bottom:0;z-index:1000000;display:none;padding-bottom:5vh;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;background-color:rgba(0,0,0,.7)}.ms-ellipsis{display:inline-block;position:relative;width:64px;height:64px}.ms-ellipsis div{position:absolute;top:27px;width:11px;height:11px;border-radius:50%;background:#fff;animation-timing-function:cubic-bezier(0,1,1,0)}.ms-ellipsis div:nth-child(1){left:6px;animation:ms-ellipsis1 .6s infinite}.ms-ellipsis div:nth-child(2){left:6px;animation:ms-ellipsis2 .6s infinite}.ms-ellipsis div:nth-child(3){left:26px;animation:ms-ellipsis2 .6s infinite}.ms-ellipsis div:nth-child(4){left:45px;animation:ms-ellipsis3 .6s infinite}@keyframes ms-ellipsis1{0%{transform:scale(0)}100%{transform:scale(1)}}@keyframes ms-ellipsis3{0%{transform:scale(1)}100%{transform:scale(0)}}@keyframes ms-ellipsis2{0%{transform:translate(0,0)}100%{transform:translate(19px,0)}}</style> </div> </div></div></body></html>
+<!--[oneand-run-as-08d7a1d87633fde11, 2020-06-05 17:57:07]-->
