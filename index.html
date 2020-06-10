@@ -27,11 +27,218 @@
   <meta name="twitter:creator" content="@silverlivres">
   <meta name="twitter:image:src" content="https://le-cdn.website-editor.net/6e3c264fd9b74a689f84d65034a0ee1c/dms3rep/multi/opt/IMG-20200331-WA0002-11815067-360w.jpg">
 
-      <link rel="stylesheet" media="screen" href="Coding%20Bootcamp%20|%20Le%20Wagon_files/frontend_desktop-b65bce491f16d3a3560181087d5a0aab.css">
+      <link rel="stylesheet" media="screen" href="">
 
 
 
 </head>
-<body>
 
+<style>
+
+body {margin: 0px}
+
+.container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  height: 50px;
+  width: 100px;
+  margin-left:5%;
+}
+
+nav {
+  background-color: #e6ad22;
+  width: 100%;
+  display:inline-flex;
+  align-items: center;
+}
+
+.menu{
+  display: flex;
+  width: 80%;
+  padding-right: 10px;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  color: white;
+  font-weight: bold;
+}
+
+li{
+  display: flex;
+  margin: 2%;
+}
+
+header{
+  display: flex;
+  background-color: white;
+  height: 500px;
+  align-items: center;
+  justify-items: center;
+  background-image: linear-gradient(to bottom, #e6ad22, rgba(0,0,0,0.5)),url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.antibesjuanlespins.com%2Fsites%2Fdefault%2Ffiles%2Fsolidar%2527livres_0.jpg&f=1&nofb=1");
+  background-size:cover;
+  background-position: center;
+}
+
+h1{
+  color: white;
+}
+
+.headertext{
+  width: 100%;
+  text-align: center;
+}
+
+h2{
+  width: 100%;
+  text-align: center;
+}
+.text{
+  margin: 75px 0px;
+}
+p{
+  margin: 1%;
+  padding: 0% 20%;
+  text-align: justify;
+}
+
+@media screen (max-width: 300px) {
+  .cards {
+    border-radius: 15px;
+  }
+}
+
+
+.cards{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-items: center;
+  background-color: #e6ad22;
+  border: 10px solid white;
+  border-radius: 10px;
+  margin: 1px;
+  width: 300px;
+  height: 300px;
+}
+
+h4{
+  margin: auto;
+  color: white;
+}
+
+.partenaires{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0px;
+}
+
+.footer1{
+  display: flex;
+  background-color: black;
+    flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+footer-menu{
+  color: white;
+}
+
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: gray;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+</style>
+
+<body style="margin: 0px">
+  <nav>
+    <img src="https://le-cdn.website-editor.net/6e3c264fd9b74a689f84d65034a0ee1c/dms3rep/multi/opt/IMG-20200331-WA0002-11815067-360w.jpg" alt="">
+    <ul class="menu">
+      <li style="color: white"><a href=#Mission>Mission</a></li>
+      <li style="color: white"><a href=#Donner>Faire un don</a></li>
+      <li style="color: white"><a href=#nouscontacter>Contacts</a></li>
+    </ul>
+  </nav>
+  <header>
+    <div class="headertext">
+      <h1>Des livres éducatifs pour les enfants</h1>
+    </div>
+  </header>
+  <main>
+    <section class="text">
+      <h2>Bienvenue</h2>
+      <p>Depuis sa création en 2019, notre association n’a jamais cessé de croître et s’est même fait depuis longtemps connaître au-delà de la simple échelle locale. Nous mettons l’accent sur la promotion de la lecture, aussi bien scolaire que lycéenne, mais aussi sur le plaisir de l'apprentissage en groupe.</p>
+    </section>
+    <section class="text" id="Mission">
+      <h2>Notre mission</h2>
+      <p>Promouvoir l'épanouissement intellectuel des jeunes et de favoriser les échanges et les expériences entre eux.Développer l'éducation et rendre accessible la connaissance à tous.</p>
+    </section>
+    <section class="container" id="Donner">
+      <div class="cards">
+        <h4>Donner un livre</h4>
+      </div>
+      <div class="cards">
+        <h4>Donner du temps</h4>
+      </div>
+      <div class="cards">
+        <h4>Donner de l'argent</h4>
+      </div>
+    </section>
+    <section>
+      <div class="" style="margin: 100px 0px;">
+        <div class="">
+          <h2>Partenaires</h2>
+        </div>
+        <div class="partenaires">
+          <img src="https://le-cdn.website-editor.net/6e3c264fd9b74a689f84d65034a0ee1c/dms3rep/multi/opt/cropped-logo-oui-5-640w.jpg" alt="" style="height: 85px">
+        </div>
+
+      </div>
+    </section>
+    <section class="contacts" id="nouscontacter">
+      <h2>Contact</h2>
+      <img src="https://duckduckgo.com/i/777ad048.png" alt="" style="height: 70px">
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Fsocial-media-logos-6%2F512%2F83-facebook-512.png&f=1&nofb=1" alt="" style="height: 80px">
+    </section>
+  </main>
+  <footer>
+    <section>
+      <div class="footer1">
+        <img src="https://le-cdn.website-editor.net/6e3c264fd9b74a689f84d65034a0ee1c/dms3rep/multi/opt/IMG-20200331-WA0002-11815067-360w.jpg" alt="">
+        <ul >
+          <li style="color: white; width: 200px"><a href=#Mission>Mission</a></li>
+          <li style="color: white"><a href=#Donner>Faire un don</a></li>
+          <li style="color: white"><a href=#nouscontacter>Contacts</a></li>
+        </ul>
+      </div>
+    </section>
+  </footer>
 </body>
